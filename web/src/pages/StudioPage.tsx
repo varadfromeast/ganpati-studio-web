@@ -259,7 +259,7 @@ export function StudioPage() {
             </button>
           </div>
 
-          <ul className="variant-grid" aria-label={`${slotLabels[activeSlot]} Variants`}>
+          <ul key={activeSlot} className="variant-grid" aria-label={`${slotLabels[activeSlot]} Variants`}>
             {activeVariants.map((variant) => {
               const selected = variant.id === selectedId;
               return (

@@ -314,3 +314,11 @@ Each tile is a paper material sample with a square preview, concise name, and op
 ## Web release refinement · 2026-09-05
 
 The homepage preserves the painted atelier identity while simplifying its supporting marks: one filled primary action, a quieter outlined video action, smaller mobile display lettering, and plain local-storage copy. Decorative sample swatches and preview numbering are removed so they do not compete with the Base Murti. Existing reduced-motion, touch feedback and immediate Variant selection remain.
+
+## Mobile studio · 2026-09-05
+
+The editor at 900px and below uses the dynamic viewport height. The full murti preview,
+category rail, horizontal material strip, and finish action share one screen. Only the
+material strip scrolls horizontally. Short portrait screens move the Base Murti switcher
+into the header; landscape phones place the preview beside the controls. Preserve native
+image proportions, 44px touch targets, safe areas, and full asset names.

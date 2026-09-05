@@ -3261,6 +3261,166 @@ input:focus {
   }
 }
 
+/* The mobile studio is a workspace: only the material strip scrolls. */
+@media (max-width: 900px) {
+  .studio-page {
+    height: 100svh;
+    height: 100dvh;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .studio-header {
+    position: relative;
+    flex: 0 0 auto;
+    min-height: 56px;
+    padding: 6px 10px;
+  }
+
+  .studio-workspace {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto auto;
+  }
+
+  .canvas-column {
+    grid-area: 1 / 1;
+    min-height: 0;
+    padding: 4px 12px 8px;
+    gap: 4px;
+  }
+
+  .base-switcher {
+    flex: 0 0 auto;
+    width: min(100%, 430px);
+    margin: 0;
+    padding: 4px 10px;
+  }
+
+  .canvas-frame {
+    min-height: 0;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: 9 / 16;
+    padding: 4px;
+    border-width: 2px;
+  }
+
+  .canvas-frame canvas {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+  }
+
+  .canvas-frame__ticks { display: none; }
+  .canvas-utilities { right: -54px; bottom: 0; flex-direction: column; }
+  .canvas-utilities button { width: 44px; height: 44px; }
+
+  .slot-rail {
+    grid-area: 2 / 1;
+    padding: 5px 10px;
+    gap: 5px;
+  }
+
+  .slot-tab { min-height: 52px; gap: 2px; font-size: 0.75rem; }
+  .slot-tab svg { width: 22px; height: 22px; }
+  .slot-tab i { bottom: 3px; }
+
+  .variant-inspector {
+    grid-area: 3 / 1;
+    min-height: 0;
+    padding: 6px 10px 8px;
+    gap: 4px;
+  }
+
+  .variant-inspector__heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    min-height: 44px;
+  }
+
+  .variant-inspector__heading::after { display: none; }
+  .variant-inspector h1 { margin: 0; font-size: 1.35rem; }
+  .variant-inspector__heading p { display: none; }
+  .surprise-button { min-height: 44px; margin: 0; padding: 6px 10px; font-size: 0.85rem; }
+
+  .variant-grid {
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 90px;
+    gap: 8px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 4px;
+    margin: 0;
+    padding: 4px 4px 6px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--vermilion-600) var(--paper);
+  }
+
+  .variant-grid > li { scroll-snap-align: start; }
+  .variant-tile { gap: 3px; padding: 5px; border: 2px solid #d8c4a7; }
+  .variant-tile.is-selected { padding: 5px; border-width: 2px; box-shadow: none; }
+  .variant-tile__image { height: 60px; aspect-ratio: auto; }
+  .variant-tile__image img { width: 100%; height: 100%; object-fit: contain; }
+  .variant-tile strong { font-size: 0.78rem; line-height: 1.15; white-space: normal; overflow: visible; overflow-wrap: anywhere; }
+  .variant-check { width: 20px; height: 20px; right: 0; bottom: 0; }
+  .variant-check svg { width: 14px; height: 14px; }
+  .variant-tile small { font-size: 0.65rem; }
+
+  .finish-dock {
+    position: static;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .finish-dock .finish-button { min-height: 48px; padding: 8px 14px; font-size: 1.25rem; }
+  .finish-dock .finish-caption { display: none; }
+  .variant-inspector .inline-notice { margin: 0; padding: 6px 10px; max-height: 56px; overflow-y: auto; font-size: 0.85rem; }
+}
+
+@media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .studio-workspace {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+  .canvas-column { grid-area: 1 / 1 / 3 / 2; }
+  .base-switcher { min-height: 44px; }
+  .base-switcher span { display: none; }
+  .base-switcher { grid-template-columns: 1fr auto; }
+  .slot-rail { grid-area: 1 / 2; }
+  .variant-inspector { grid-area: 2 / 2; overflow-y: auto; }
+  .finish-dock { margin-top: auto; }
+}
+
+@media (max-width: 640px) and (max-height: 700px) and (orientation: portrait) {
+  .studio-header { z-index: 0; }
+  .studio-header .brand, .studio-progress { display: none; }
+  .canvas-column .base-switcher {
+    position: absolute;
+    top: -50px;
+    left: 62px;
+    width: calc(100% - 74px);
+    z-index: 21;
+  }
+  .base-switcher span { display: none; }
+  .base-switcher { grid-template-columns: 1fr auto; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
