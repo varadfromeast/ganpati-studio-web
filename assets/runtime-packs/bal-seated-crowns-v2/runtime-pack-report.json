@@ -1,0 +1,382 @@
+{
+  "counts": {
+    "bytes": 8958083,
+    "files": 46
+  },
+  "inventory": [
+    {
+      "bytes": 262383,
+      "contentHash": "sha256:69d535edaa06aea79061812fb39854682e7bf58a7342d5ebe8974d2a09955a36",
+      "path": "fit-masks/crown-head-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 24459,
+      "contentHash": "sha256:b9b811a2e8587e95ce685265953a85b12b08441208d0d17a4ed06a391fe538f5",
+      "path": "fit-masks/garland-chest-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 11608,
+      "contentHash": "sha256:e052960da5bd8e6ec54a446bae2a157f4fc8c49772c090f18c9b10e6d6720936",
+      "path": "fit-masks/offering-hand-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 9521,
+      "contentHash": "sha256:49ecdf7de3a83eaaebc72da8303963d30f60abcde3b4455a3f6b43b466ec9805",
+      "path": "fit-masks/outfit-full-body-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 9910,
+      "contentHash": "sha256:d11223208db24d28e7d5d3cc58c695db8fec453bcd6ca7f2d790fbee51ab59a5",
+      "path": "fit-masks/scene-full-canvas-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 2226274,
+      "contentHash": "sha256:71a4cc9966cf1ab1b695698b8cdc2eac36c5606202de82f29a4a41ff05d45f9e",
+      "path": "layers/base.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 201997,
+      "contentHash": "sha256:562e5f0705504a6391672b48614b8ce34f856fb9241397ef1f1442617827bb19",
+      "path": "layers/crown-blue-lotus.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 121228,
+      "contentHash": "sha256:af643e65d1e2a9237af9464ac6ae582da7f03c43bf3920163867329989bde24e",
+      "path": "layers/crown-flower.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6191,
+      "contentHash": "sha256:b994ce641b27a09631ecdaf20e1f20827690d873fd270af8756ff625fb715eb7",
+      "path": "layers/crown-none.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 286025,
+      "contentHash": "sha256:9b331f335c9fb6cd5ee7f734614488d78765a0c75561ac74ba4d9f4370783216",
+      "path": "layers/crown-peacock.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 262383,
+      "contentHash": "sha256:69d535edaa06aea79061812fb39854682e7bf58a7342d5ebe8974d2a09955a36",
+      "path": "layers/crown-royal.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 22666,
+      "contentHash": "sha256:bb693a7246adc0ed9f12ee07006b50286f61a6ffca0696f06c5297ea3f25fbf0",
+      "path": "layers/fixed-offering-fingers.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 40035,
+      "contentHash": "sha256:4288460aa709625e283c4cf3a22d66fc5415fb011b12f7a6de48a8d2b0349d9c",
+      "path": "layers/fixed-trunk-foreground.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 57894,
+      "contentHash": "sha256:45f79514f77502fbefcddab2c1cffb0c2cd610b99acbe491a18ee5e90999cbdd",
+      "path": "layers/garland-lotus-jasmine.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 72779,
+      "contentHash": "sha256:b3af2b8ff107b2540cb82c1750c971269c4414cc341f369e0a3c41073f1556e9",
+      "path": "layers/garland-marigold.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6191,
+      "contentHash": "sha256:b994ce641b27a09631ecdaf20e1f20827690d873fd270af8756ff625fb715eb7",
+      "path": "layers/garland-none.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 54088,
+      "contentHash": "sha256:7c3aca89a8e97064031479dacfbd5d4a27f58465d8a42d66db065c45bf3bfb6c",
+      "path": "layers/garland-rose-jasmine-flowing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 63456,
+      "contentHash": "sha256:dafd2ae43208dbd9a70102e1dafaeda5ac3363145a53c1b88aba0a7a3a6c1226",
+      "path": "layers/garland-rose-jasmine.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 31949,
+      "contentHash": "sha256:6dbff388a099c4c3dcacc01d1b3af145099bada2743eb65fa27ceec639ec564f",
+      "path": "layers/offering-classic.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 33389,
+      "contentHash": "sha256:79a942a20609c717a017b27b17cfee990feccefd715353b928635b3814a9c751",
+      "path": "layers/offering-kesar.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 34146,
+      "contentHash": "sha256:7ec2b728c3807d7090c3ea4f3568e3de4be804a5d7dbde7d5469da173bce24d4",
+      "path": "layers/offering-rose.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 637855,
+      "contentHash": "sha256:1ae43332ab71e6f119e39b259bfce70f9a17c713154ef6c078b0d64532ba8742",
+      "path": "layers/outfit-armor-royal.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 410337,
+      "contentHash": "sha256:a3d28a56cfd0a2546decd9a5a46774709fb79b663c258afc680327b31d7b73e6",
+      "path": "layers/outfit-jewel-festival.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6191,
+      "contentHash": "sha256:b994ce641b27a09631ecdaf20e1f20827690d873fd270af8756ff625fb715eb7",
+      "path": "layers/outfit-saffron.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 105963,
+      "contentHash": "sha256:52fb08af9ea8c1f344dc1c5c03799b0946cf81df5d59b2406d40f37b337164ef",
+      "path": "layers/outfit-teal.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 2572936,
+      "contentHash": "sha256:85668cbcaf15ba147ae90c4ee5e2d3208b80fac9839778f4b2eec4e60659d107",
+      "path": "layers/scene-celestial-aarti.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 70,
+      "contentHash": "sha256:7dec817a60fe7c55c55a90d6e4da6199577c2add285b93ef0433153ecf91e2f0",
+      "path": "layers/scene-original.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 37827,
+      "contentHash": "sha256:3376aa097bb79fa4ad2960d5e457b2b19e6eb89b492d7eb51eea90eb056875f9",
+      "path": "manifest.v2.json",
+      "roles": [
+        "manifest"
+      ]
+    },
+    {
+      "bytes": 65961,
+      "contentHash": "sha256:76d7bc60c68c274507d87260adf2f24fe96db242dea3ff0d8d13504041f211e1",
+      "path": "thumbnails/crown-blue-lotus.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 39690,
+      "contentHash": "sha256:57a564b83e7c244a7d9842489788903155ecf48ff953419d2f113dcce10384ed",
+      "path": "thumbnails/crown-flower.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 90881,
+      "contentHash": "sha256:97e1a1566e606ffbb52c0e024a5251fc0846d2e760068244cc2f9a6733b8162d",
+      "path": "thumbnails/crown-peacock.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 83269,
+      "contentHash": "sha256:067337d8766a5e06e80075a2e5b52ba43570c61bf8f8d44bbb528c536efb7511",
+      "path": "thumbnails/crown-royal.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 25572,
+      "contentHash": "sha256:9f53b8e7b3c761d5d702816ab366c1c3a900845ffad1726a42173e6b389897ac",
+      "path": "thumbnails/garland-lotus-jasmine.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 34479,
+      "contentHash": "sha256:51ac61d84c20a8f2e764482ad098a42e65d0bb1b9fbd8360efcb2603366377d3",
+      "path": "thumbnails/garland-marigold.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 334,
+      "contentHash": "sha256:aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f",
+      "path": "thumbnails/garland-none.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 29267,
+      "contentHash": "sha256:ad90f2597697370b8b483fbc4c05eaf73cdd39efdcce61064a648f7a56b0f74f",
+      "path": "thumbnails/garland-rose-jasmine-flowing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 31897,
+      "contentHash": "sha256:6e5a2f4bf27644c2b3dd9c0be02f7691354de9fc3efd0059452481ddf1856c01",
+      "path": "thumbnails/garland-rose-jasmine.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 22546,
+      "contentHash": "sha256:9381b2c5db69970ed4e09431ba2e716e2beea3e74096b37b1e816dea529e2ad3",
+      "path": "thumbnails/offering-classic.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 23808,
+      "contentHash": "sha256:1ade853559092bdd10b3444b93ac9c044f3d4f76ad9cfc5d47a5c4ecc35df578",
+      "path": "thumbnails/offering-kesar.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 24508,
+      "contentHash": "sha256:d1f09e2d9daf9039034cc1d58d953ee85e6b90ce566bf212ac13e784bedb868a",
+      "path": "thumbnails/offering-rose.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 164174,
+      "contentHash": "sha256:9ae7b512e6981244e7259beca17cc4e7647441aed97dce5ac102ac1760755dd6",
+      "path": "thumbnails/outfit-armor-royal.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 155136,
+      "contentHash": "sha256:5a28c7e99235cd53b4961184758b3e5fc27adb1c649bd52189f2bedc38856613",
+      "path": "thumbnails/outfit-jewel-festival.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 141543,
+      "contentHash": "sha256:e04d65cc13e880366b3d64ac46bcf6bc5e4f1b05a48630227c8e7b05d596b2ec",
+      "path": "thumbnails/outfit-saffron.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 136012,
+      "contentHash": "sha256:fb8e5a5ab70f15e078bfca9eb98e557bfebcc6088d99673994fea180bfa1a0fa",
+      "path": "thumbnails/outfit-teal.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 142757,
+      "contentHash": "sha256:2a770029bf86dd46de07753740909bbad58ff09cf02b0171f963a30092304529",
+      "path": "thumbnails/scene-celestial-aarti.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 136498,
+      "contentHash": "sha256:c7d6bf56be2350f60463c89d3bef1097ced3546a64998d1721e5edc5d32ff602",
+      "path": "thumbnails/scene-original.png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  ],
+  "packID": "murti.bal-seated.v1",
+  "releaseEligible": true,
+  "reviewStatus": "approved",
+  "schemaVersion": 1,
+  "status": "passed",
+  "validationPolicy": "release"
+}

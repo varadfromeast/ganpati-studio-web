@@ -1,0 +1,1496 @@
+{
+  "schemaVersion": 2,
+  "posture": {
+    "id": "murti.bal-seated.v1",
+    "baseVersion": "1.0.0",
+    "canvas": {
+      "width": 941,
+      "height": 1672
+    },
+    "coordinateOrigin": "topLeft",
+    "fixedLayerAssetIDs": [
+      "fixed.bal-seated-base.v1",
+      "fixed.offering-fingers.v1",
+      "fixed.trunk-foreground.v1"
+    ],
+    "supportedSlots": [
+      "crown",
+      "garland",
+      "outfit",
+      "offering",
+      "scene"
+    ],
+    "defaultSelections": {
+      "crown": "crown.royal.v1",
+      "garland": "garland.rose-flowing.v1",
+      "outfit": "outfit.saffron.v1",
+      "offering": "offering.classic.v1",
+      "scene": "scene.original.v1"
+    },
+    "rights": {
+      "author": "Ganpati Studio",
+      "sourceAgreement": "ledger.json#base",
+      "aiAssisted": true
+    },
+    "technicalReview": {
+      "status": "approved",
+      "reviewer": "Product owner",
+      "date": "2026-09-04"
+    },
+    "culturalReview": {
+      "status": "approved",
+      "reviewer": "Product owner",
+      "date": "2026-09-04"
+    }
+  },
+  "sockets": [
+    {
+      "socketID": "socket.crown.bal-seated.v1",
+      "slot": "crown",
+      "anchor": {
+        "x": 470,
+        "y": 500
+      },
+      "fitMask": {
+        "file": "fit-masks/crown-head-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:69d535edaa06aea79061812fb39854682e7bf58a7342d5ebe8974d2a09955a36"
+      },
+      "requiredLayerRoles": [
+        "front"
+      ],
+      "occluderLayerAssetIDs": []
+    },
+    {
+      "socketID": "socket.garland.bal-seated.v1",
+      "slot": "garland",
+      "anchor": {
+        "x": 468,
+        "y": 842
+      },
+      "fitGeometry": {
+        "model": "threePointAffineV1",
+        "coordinateSpace": "canonicalPixelsTopLeft",
+        "landmarks": {
+          "leftAttach": {
+            "x": 344,
+            "y": 842
+          },
+          "rightAttach": {
+            "x": 614,
+            "y": 842
+          },
+          "centerDrop": {
+            "x": 468,
+            "y": 1132
+          }
+        },
+        "pathAuthoring": {
+          "model": "sharedTwoCubicBezierPathV2",
+          "placement": "equalArcLengthTangentAligned",
+          "endpointTaper": 0.72,
+          "leftControlPoints": [
+            {
+              "x": 314,
+              "y": 914
+            },
+            {
+              "x": 354,
+              "y": 1074
+            }
+          ],
+          "rightControlPoints": [
+            {
+              "x": 650,
+              "y": 914
+            },
+            {
+              "x": 594,
+              "y": 1074
+            }
+          ],
+          "componentSet": "design/asset-sources/garlands/components-v2"
+        },
+        "trunkOccluderPolygon": [
+          {
+            "x": 451,
+            "y": 731
+          },
+          {
+            "x": 493,
+            "y": 731
+          },
+          {
+            "x": 499,
+            "y": 791
+          },
+          {
+            "x": 509,
+            "y": 836
+          },
+          {
+            "x": 531,
+            "y": 873
+          },
+          {
+            "x": 570,
+            "y": 890
+          },
+          {
+            "x": 581,
+            "y": 918
+          },
+          {
+            "x": 570,
+            "y": 947
+          },
+          {
+            "x": 542,
+            "y": 956
+          },
+          {
+            "x": 523,
+            "y": 941
+          },
+          {
+            "x": 539,
+            "y": 920
+          },
+          {
+            "x": 514,
+            "y": 907
+          },
+          {
+            "x": 492,
+            "y": 879
+          },
+          {
+            "x": 473,
+            "y": 840
+          },
+          {
+            "x": 458,
+            "y": 793
+          }
+        ]
+      },
+      "fitMask": {
+        "file": "fit-masks/garland-chest-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:b9b811a2e8587e95ce685265953a85b12b08441208d0d17a4ed06a391fe538f5"
+      },
+      "requiredLayerRoles": [
+        "front"
+      ],
+      "occluderLayerAssetIDs": [
+        "fixed.trunk-foreground.v1"
+      ]
+    },
+    {
+      "socketID": "socket.outfit.bal-seated.v1",
+      "slot": "outfit",
+      "anchor": {
+        "x": 470,
+        "y": 1010
+      },
+      "fitMask": {
+        "file": "fit-masks/outfit-full-body-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:49ecdf7de3a83eaaebc72da8303963d30f60abcde3b4455a3f6b43b466ec9805"
+      },
+      "requiredLayerRoles": [
+        "front"
+      ],
+      "occluderLayerAssetIDs": [
+        "fixed.offering-fingers.v1",
+        "fixed.trunk-foreground.v1"
+      ]
+    },
+    {
+      "socketID": "socket.offering.bal-seated.v1",
+      "slot": "offering",
+      "anchor": {
+        "x": 653,
+        "y": 1018
+      },
+      "fitMask": {
+        "file": "fit-masks/offering-hand-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:e052960da5bd8e6ec54a446bae2a157f4fc8c49772c090f18c9b10e6d6720936"
+      },
+      "requiredLayerRoles": [
+        "held"
+      ],
+      "occluderLayerAssetIDs": [
+        "fixed.offering-fingers.v1"
+      ]
+    },
+    {
+      "socketID": "socket.scene.bal-seated.v1",
+      "slot": "scene",
+      "anchor": {
+        "x": 470,
+        "y": 836
+      },
+      "fitMask": {
+        "file": "fit-masks/scene-full-canvas-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:d11223208db24d28e7d5d3cc58c695db8fec453bcd6ca7f2d790fbee51ab59a5"
+      },
+      "requiredLayerRoles": [
+        "environment"
+      ],
+      "occluderLayerAssetIDs": []
+    }
+  ],
+  "layers": [
+    {
+      "assetID": "fixed.bal-seated-base.v1",
+      "file": "layers/base.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 0,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:71a4cc9966cf1ab1b695698b8cdc2eac36c5606202de82f29a4a41ff05d45f9e",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#base",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "fixed.offering-fingers.v1",
+      "file": "layers/fixed-offering-fingers.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 700,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:bb693a7246adc0ed9f12ee07006b50286f61a6ffca0696f06c5297ea3f25fbf0",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#offering-finger-occluder",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "fixed.trunk-foreground.v1",
+      "file": "layers/fixed-trunk-foreground.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 710,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:4288460aa709625e283c4cf3a22d66fc5415fb011b12f7a6de48a8d2b0349d9c",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#garland-trunk-occluder",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "crown.none.front.v1",
+      "file": "layers/crown-none.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 850,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:b994ce641b27a09631ecdaf20e1f20827690d873fd270af8756ff625fb715eb7",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#base",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "crown.royal.front.v2",
+      "file": "layers/crown-royal.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 850,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:69d535edaa06aea79061812fb39854682e7bf58a7342d5ebe8974d2a09955a36",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#crown-royal",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.peacock.front.v2",
+      "file": "layers/crown-peacock.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 850,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:9b331f335c9fb6cd5ee7f734614488d78765a0c75561ac74ba4d9f4370783216",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#crown-peacock",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.flower.front.v2",
+      "file": "layers/crown-flower.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 850,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:af643e65d1e2a9237af9464ac6ae582da7f03c43bf3920163867329989bde24e",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#crown-flower",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.blue-lotus.front.v1",
+      "file": "layers/crown-blue-lotus.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 850,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:562e5f0705504a6391672b48614b8ce34f856fb9241397ef1f1442617827bb19",
+      "rights": {
+        "author": "Ganpati Studio with user-supplied reference and OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#crown-blue-lotus",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.rose.front.v1",
+      "file": "layers/garland-rose-jasmine.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 600,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:dafd2ae43208dbd9a70102e1dafaeda5ac3363145a53c1b88aba0a7a3a6c1226",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#garland-rose-jasmine",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.rose-flowing.front.v1",
+      "file": "layers/garland-rose-jasmine-flowing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 600,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:7c3aca89a8e97064031479dacfbd5d4a27f58465d8a42d66db065c45bf3bfb6c",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#garland-rose-jasmine-flowing",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.marigold.front.v1",
+      "file": "layers/garland-marigold.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 600,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:b3af2b8ff107b2540cb82c1750c971269c4414cc341f369e0a3c41073f1556e9",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#garland-marigold",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.lotus-jasmine.front.v1",
+      "file": "layers/garland-lotus-jasmine.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 600,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:45f79514f77502fbefcddab2c1cffb0c2cd610b99acbe491a18ee5e90999cbdd",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#garland-lotus-jasmine",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.none.front.v1",
+      "file": "layers/garland-none.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 600,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:b994ce641b27a09631ecdaf20e1f20827690d873fd270af8756ff625fb715eb7",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#base",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "outfit.saffron.front.v1",
+      "file": "layers/outfit-saffron.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 580,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1",
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:b994ce641b27a09631ecdaf20e1f20827690d873fd270af8756ff625fb715eb7",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#base",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "outfit.armor-royal.front.v1",
+      "file": "layers/outfit-armor-royal.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 580,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1",
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:1ae43332ab71e6f119e39b259bfce70f9a17c713154ef6c078b0d64532ba8742",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#outfit-armor-royal",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "outfit.teal.front.v1",
+      "file": "layers/outfit-teal.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 580,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1",
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:52fb08af9ea8c1f344dc1c5c03799b0946cf81df5d59b2406d40f37b337164ef",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#outfit-teal",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "outfit.jewel-festival.front.v1",
+      "file": "layers/outfit-jewel-festival.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 580,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1",
+        "fixed.trunk-foreground.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:a3d28a56cfd0a2546decd9a5a46774709fb79b663c258afc680327b31d7b73e6",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#outfit-jewel-festival",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "offering.classic.held.v1",
+      "file": "layers/offering-classic.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 650,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:6dbff388a099c4c3dcacc01d1b3af145099bada2743eb65fa27ceec639ec564f",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#offering-classic",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "offering.kesar.held.v1",
+      "file": "layers/offering-kesar.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 650,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:79a942a20609c717a017b27b17cfee990feccefd715353b928635b3814a9c751",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#offering-kesar",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "offering.rose.held.v1",
+      "file": "layers/offering-rose.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 650,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.offering-fingers.v1"
+      ],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:7ec2b728c3807d7090c3ea4f3568e3de4be804a5d7dbde7d5469da173bce24d4",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#offering-rose",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "scene.original.environment.v1",
+      "file": "layers/scene-original.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      "zIndex": 10,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:7dec817a60fe7c55c55a90d6e4da6199577c2add285b93ef0433153ecf91e2f0",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "ledger.json#scene-original",
+        "aiAssisted": false
+      }
+    },
+    {
+      "assetID": "scene.celestial-aarti.environment.v1",
+      "file": "layers/scene-celestial-aarti.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 10,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [
+        "posture:murti.bal-seated.v1"
+      ],
+      "excludes": [],
+      "contentHash": "sha256:85668cbcaf15ba147ae90c4ee5e2d3208b80fac9839778f4b2eec4e60659d107",
+      "rights": {
+        "author": "Ganpati Studio with OpenAI ImageGen",
+        "sourceAgreement": "ledger.json#scene-celestial-aarti",
+        "aiAssisted": true
+      }
+    }
+  ],
+  "optionGroups": [
+    {
+      "optionID": "crown.none.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-seated.v1",
+      "displayName": "No Crown",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.none.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/garland-none.png",
+      "referenceComposite": "references/garland-none.png",
+      "collectionTags": [
+        "none",
+        "natural"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.royal.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-seated.v1",
+      "displayName": "Royal Mukut",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.royal.front.v2"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/crown-royal.png",
+      "referenceComposite": "references/crown-royal.png",
+      "collectionTags": [
+        "royal",
+        "gold",
+        "ruby"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.peacock.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-seated.v1",
+      "displayName": "Peacock Mukut",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.peacock.front.v2"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/crown-peacock.png",
+      "referenceComposite": "references/crown-peacock.png",
+      "collectionTags": [
+        "peacock",
+        "teal",
+        "gold"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.flower.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-seated.v1",
+      "displayName": "Flower Crown",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.flower.front.v2"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/crown-flower.png",
+      "referenceComposite": "references/crown-flower.png",
+      "collectionTags": [
+        "floral",
+        "lotus",
+        "marigold"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.blue-lotus.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-seated.v1",
+      "displayName": "Neel Kamal Mukut",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.blue-lotus.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/crown-blue-lotus.png",
+      "referenceComposite": "references/crown-blue-lotus.png",
+      "collectionTags": [
+        "blue",
+        "gold",
+        "lotus",
+        "royal"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.rose.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-seated.v1",
+      "displayName": "Rose Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.rose.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/garland-rose-jasmine.png",
+      "referenceComposite": "references/garland-rose-jasmine.png",
+      "collectionTags": [
+        "rose",
+        "jasmine",
+        "royal"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.rose-flowing.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-seated.v1",
+      "displayName": "Flowing Rose Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.rose-flowing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/garland-rose-jasmine-flowing.png",
+      "referenceComposite": "references/garland-rose-jasmine-flowing.png",
+      "collectionTags": [
+        "rose",
+        "jasmine",
+        "flowing",
+        "path-sampled"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.marigold.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-seated.v1",
+      "displayName": "Marigold Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.marigold.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/garland-marigold.png",
+      "referenceComposite": "references/garland-marigold.png",
+      "collectionTags": [
+        "marigold",
+        "saffron",
+        "festival"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.lotus-jasmine.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-seated.v1",
+      "displayName": "Lotus Jasmine",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.lotus-jasmine.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/garland-lotus-jasmine.png",
+      "referenceComposite": "references/garland-lotus-jasmine.png",
+      "collectionTags": [
+        "lotus",
+        "jasmine",
+        "calm"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.none.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-seated.v1",
+      "displayName": "No Garland",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.none.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/garland-none.png",
+      "referenceComposite": "references/garland-none.png",
+      "collectionTags": [
+        "none",
+        "armor-compatible"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.saffron.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-seated.v1",
+      "displayName": "Pink Drape",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.saffron.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-saffron.png",
+      "referenceComposite": "references/outfit-saffron.png",
+      "collectionTags": [
+        "pink",
+        "base",
+        "traditional"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.armor-royal.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-seated.v1",
+      "displayName": "Royal Bal Kavach",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.armor-royal.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-armor-royal.png",
+      "referenceComposite": "references/outfit-armor-royal.png",
+      "collectionTags": [
+        "armor",
+        "royal",
+        "gold",
+        "ruby",
+        "emerald"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.teal.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-seated.v1",
+      "displayName": "Peacock Teal",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.teal.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-teal.png",
+      "referenceComposite": "references/outfit-teal.png",
+      "collectionTags": [
+        "peacock",
+        "teal",
+        "gold",
+        "traditional"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.jewel-festival.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-seated.v1",
+      "displayName": "Jewel Festival Drape",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.jewel-festival.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-jewel-festival.png",
+      "referenceComposite": "references/outfit-jewel-festival.png",
+      "collectionTags": [
+        "peacock",
+        "teal",
+        "magenta",
+        "purple",
+        "gold",
+        "festival"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "offering.classic.v1",
+      "slot": "offering",
+      "socketID": "socket.offering.bal-seated.v1",
+      "displayName": "Classic Modak",
+      "layerBindings": [
+        {
+          "role": "held",
+          "assetID": "offering.classic.held.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/offering-classic.png",
+      "referenceComposite": "references/offering-classic.png",
+      "collectionTags": [
+        "classic",
+        "ivory",
+        "home"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "offering.kesar.v1",
+      "slot": "offering",
+      "socketID": "socket.offering.bal-seated.v1",
+      "displayName": "Kesar Modak",
+      "layerBindings": [
+        {
+          "role": "held",
+          "assetID": "offering.kesar.held.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/offering-kesar.png",
+      "referenceComposite": "references/offering-kesar.png",
+      "collectionTags": [
+        "kesar",
+        "saffron",
+        "festival"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "offering.rose.v1",
+      "slot": "offering",
+      "socketID": "socket.offering.bal-seated.v1",
+      "displayName": "Rose Modak",
+      "layerBindings": [
+        {
+          "role": "held",
+          "assetID": "offering.rose.held.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/offering-rose.png",
+      "referenceComposite": "references/offering-rose.png",
+      "collectionTags": [
+        "rose",
+        "pink",
+        "floral"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "scene.original.v1",
+      "slot": "scene",
+      "socketID": "socket.scene.bal-seated.v1",
+      "displayName": "Original Shrine",
+      "layerBindings": [
+        {
+          "role": "environment",
+          "assetID": "scene.original.environment.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/scene-original.png",
+      "referenceComposite": "references/scene-original.png",
+      "collectionTags": [
+        "base",
+        "home",
+        "daylight"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "scene.celestial-aarti.v1",
+      "slot": "scene",
+      "socketID": "socket.scene.bal-seated.v1",
+      "displayName": "Celestial Aarti",
+      "layerBindings": [
+        {
+          "role": "environment",
+          "assetID": "scene.celestial-aarti.environment.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-seated.v1"
+      ],
+      "thumbnail": "thumbnails/scene-celestial-aarti.png",
+      "referenceComposite": "references/scene-celestial-aarti.png",
+      "collectionTags": [
+        "starry",
+        "festival",
+        "night",
+        "diya"
+      ],
+      "requires": [],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    }
+  ],
+  "qa": {
+    "highRiskPairs": [
+      [
+        "crown.royal.v1",
+        "garland.rose.v1"
+      ],
+      [
+        "crown.peacock.v1",
+        "garland.lotus-jasmine.v1"
+      ],
+      [
+        "crown.flower.v1",
+        "garland.marigold.v1"
+      ],
+      [
+        "crown.blue-lotus.v1",
+        "garland.rose-flowing.v1"
+      ],
+      [
+        "crown.royal.v1",
+        "offering.kesar.v1"
+      ],
+      [
+        "garland.lotus-jasmine.v1",
+        "offering.rose.v1"
+      ],
+      [
+        "crown.peacock.v1",
+        "outfit.teal.v1"
+      ],
+      [
+        "crown.peacock.v1",
+        "outfit.jewel-festival.v1"
+      ]
+    ]
+  }
+}

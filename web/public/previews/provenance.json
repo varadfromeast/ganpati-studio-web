@@ -1,0 +1,16 @@
+{
+  "seated.webp": {
+    "kind": "deterministic-web-derivative",
+    "source": "assets/runtime-packs/bal-seated-crowns-v2/layers/base.png",
+    "transform": "cwebp -q 82 -resize 600 0",
+    "rightsRecord": "assets/packs/bal-seated-crowns-v2/ledger.json",
+    "artisticChanges": false
+  },
+  "dancing.webp": {
+    "kind": "deterministic-web-derivative",
+    "source": "assets/runtime-packs/bal-dancing-geometry-v1/layers/base.png",
+    "transform": "cwebp -q 82 -resize 600 0",
+    "rightsRecord": "assets/packs/bal-dancing-geometry-v1/ledger.json",
+    "artisticChanges": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "packID": "murti.bal-dancing.v1",
+  "releaseStatus": "approved-for-release",
+  "signoff": {
+    "confirmedBy": "Product owner",
+    "date": "2026-09-04",
+    "evidence": "assets/RELEASE_SIGNOFF.json"
+  },
+  "entries": {
+    "posture": {
+      "author": "Ganpati Studio",
+      "source": "User-supplied base murti pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "fixed.bal-dancing-base.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "scene.original.bal-dancing.environment.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "scene.celestial-aarti.bal-dancing.environment.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown.none.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland.none.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit.saffron.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit.armor-royal.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit.teal.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit.jewel-festival.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland.marigold.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland.rose.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland.rose-flowing.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland.lotus-jasmine.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "fixed.trunk-foreground.bal-dancing.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown.royal.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown.flower.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown.peacock.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown.blue-lotus.bal-dancing.front.v1": {
+      "author": "Ganpati Studio",
+      "source": "Dancing Joy attachment pilot, 2026-08-14",
+      "aiAssisted": true,
+      "rightsEvidence": "Commercial release rights confirmed by the product owner.",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    }
+  }
+}
