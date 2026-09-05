@@ -66,9 +66,15 @@ export class FalImageToVideoGenerator implements VideoGenerator {
   }
 
   private async retrieve(requestId: string): Promise<ProviderVideo> {
-    const deadline = this.now() + 8 * 60_000;
+    const startedAt = this.now();
+    const deadline = startedAt + 8 * 60_000;
+    let previousStatus = "";
     while (true) {
       const status = await this.client.status(this.profile.endpointId, requestId);
+      if (status.status !== previousStatus) {
+        console.info(JSON.stringify({ event: "fal_video_status", requestId, endpoint: this.profile.endpointId, status: status.status, elapsedMs: this.now() - startedAt }));
+        previousStatus = status.status;
+      }
       if (status.status === "COMPLETED") break;
       if (this.now() >= deadline) {
         throw new Error("fal video operation is still processing and can be resumed safely.");

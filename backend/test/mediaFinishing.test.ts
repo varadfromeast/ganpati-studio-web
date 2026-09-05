@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
+import { mkdtemp, writeFile, readFile, chmod, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { describe, it } from "node:test";
 import {
+  FFmpegMediaFinisher,
   buildMessageOverlayFilter,
   messageFontPath,
   wrapMessage,
@@ -90,4 +94,34 @@ describe("message overlay layout", () => {
       format: { duration: "6.0" },
     }));
   });
+});
+
+// Exercise the actual finisher invocation without requiring a platform-specific drawtext build.
+it("finishes using provider audio without replacing or fading the soundtrack", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "finisher-audio-test-"));
+  try {
+    const encoder = join(directory, "encoder");
+    const probe = join(directory, "probe");
+    const argumentsFile = join(directory, "arguments.json");
+    await writeFile(encoder, `#!${process.execPath}
+const fs = require('node:fs');
+const args = process.argv.slice(2);
+fs.writeFileSync(${JSON.stringify(argumentsFile)}, JSON.stringify(args));
+fs.writeFileSync(args.at(-1), 'encoded-video');
+`);
+    await writeFile(probe, `#!${process.execPath}
+console.log(JSON.stringify({streams:[{codec_type:'video',codec_name:'h264',width:720,height:1280},{codec_type:'audio',codec_name:'aac'}],format:{duration:'6.0'}}));
+`);
+    await chmod(encoder, 0o755);
+    await chmod(probe, 0o755);
+    await new FFmpegMediaFinisher(encoder, probe).finish({
+      video: { bytes: new Uint8Array([1]) }, personalizedMessage: "Happy Ganesh Chaturthi!", localeIdentifier: "en-IN",
+    });
+    const args = JSON.parse(await readFile(argumentsFile, "utf8")) as string[];
+    assert.ok(args.some((value, index) => value === "-map" && args[index + 1] === "0:a:0"));
+    assert.ok(!args.includes("lavfi"), "must not replace speech with synthetic audio");
+    assert.ok(!args.includes("-af"), "must not fade out the last spoken words");
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
 });

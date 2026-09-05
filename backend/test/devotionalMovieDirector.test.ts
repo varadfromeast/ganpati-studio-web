@@ -10,7 +10,7 @@ import type {
 import { testAttempt } from "./helpers.js";
 
 describe("DevotionalMovieDirector", () => {
-  it("runs both gates in order and uses only reviewed motion in the provider prompt", async () => {
+  it("runs both gates before requesting the approved personalised speech", async () => {
     const events: string[] = [];
     const languageModel: DevotionalLanguageModel = {
       evaluate: mock.fn(async (input) => {
@@ -41,7 +41,7 @@ describe("DevotionalMovieDirector", () => {
     const lifecycleEvents: string[] = [];
 
     const outcome = await director.create(
-      testAttempt({ dedication: "USER_RAW_NEVER_COPY_TO_VIDEO_PROVIDER" }),
+      testAttempt({ dedication: "Happy Ganesh Chaturthi, Asha!" }),
       {
         beforeSubmission: async () => { lifecycleEvents.push("providerSubmitting"); },
         operationObserved: async (id) => { lifecycleEvents.push(`operation:${id}`); },
@@ -62,10 +62,13 @@ describe("DevotionalMovieDirector", () => {
       "operation:operation-1",
       "providerOutputPersisted",
     ]);
-    assert.equal(providerPrompt.includes("USER_RAW_NEVER_COPY_TO_VIDEO_PROVIDER"), false);
+    assert.equal(providerPrompt.includes("Happy Ganesh Chaturthi, Asha!"), true);
     assert.equal(providerPrompt.includes("Reviewed motion direction"), true);
-    assert.equal(finishedMessage, "USER_RAW_NEVER_COPY_TO_VIDEO_PROVIDER");
-    assert.equal(outcome.kind === "ready" ? outcome.message : "", "USER_RAW_NEVER_COPY_TO_VIDEO_PROVIDER");
+    assert.doesNotMatch(providerPrompt, /Do not generate speech/);
+    assert.match(providerPrompt, /cute.*youthful/);
+    assert.match(providerPrompt, /synchroniz/i);
+    assert.equal(finishedMessage, "Happy Ganesh Chaturthi, Asha!");
+    assert.equal(outcome.kind === "ready" ? outcome.message : "", "Happy Ganesh Chaturthi, Asha!");
   });
 
   const blockedCases = [

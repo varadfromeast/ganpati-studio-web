@@ -21,7 +21,15 @@ export class DevotionalMovieDirector {
     attempt: CreationAttempt,
     lifecycle: PaidSubmissionLifecycle,
   ): Promise<DirectorOutcome> {
+    const startedAt = Date.now();
+    let stageStartedAt = startedAt;
+    const recordStage = (stage: string) => {
+      const now = Date.now();
+      console.info(JSON.stringify({ event: "devotional_video_timing", stage, durationMs: now - stageStartedAt, elapsedMs: now - startedAt }));
+      stageStartedAt = now;
+    };
     const firstGate = await this.evaluateGate(this.policyInput(attempt, "userRequest"));
+    recordStage("request_policy");
     if (!advancingDecision(firstGate) && firstGate.decision !== "allow") {
       return {
         kind: "rejected",
@@ -36,7 +44,8 @@ export class DevotionalMovieDirector {
       ...(attempt.occasion === undefined ? {} : { occasion: attempt.occasion }),
       localeIdentifier: attempt.localeIdentifier,
     });
-    // The user-approved dedication is the overlay contract. The model may help
+    recordStage("narrative");
+    // The user-approved dedication is the speech and overlay contract. The model may help
     // with reviewed motion direction, but it never rewrites paid display copy.
     const narrative = {
       personalizedMessage: attempt.dedication,
@@ -46,6 +55,7 @@ export class DevotionalMovieDirector {
     const secondGate = await this.evaluateGate(
       this.policyInput(attempt, "generatedBrief", narrative.personalizedMessage, narrative.videoPromptEN),
     );
+    recordStage("brief_policy");
     if (!advancingDecision(secondGate) && secondGate.decision !== "allow") {
       return {
         kind: "rejected",
@@ -64,8 +74,12 @@ export class DevotionalMovieDirector {
       },
       lifecycle.operationObserved,
     );
+    recordStage("provider_generation");
     await lifecycle.providerOutputObserved(providerVideo);
-    return await this.finish(providerVideo, narrative.personalizedMessage, attempt.localeIdentifier);
+    recordStage("persist_raw_video");
+    const outcome = await this.finish(providerVideo, narrative.personalizedMessage, attempt.localeIdentifier);
+    recordStage("finishing");
+    return outcome;
   }
 
   async resume(

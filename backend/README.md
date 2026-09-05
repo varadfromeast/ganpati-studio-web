@@ -156,9 +156,10 @@ automatically submitted again.
 When the provider finishes, its original MP4 is stored immutably under `provider-raw/` and its
 hash is attached to the attempt before FFmpeg processing starts. Finishing recovery reads that
 stored object, never resubmits or redownloads paid output. The final contract requires portrait
-H.264 video plus AAC audio. Finishing replaces provider audio with a deterministic, rights-clear
-synthesized ambient bed and never asks the provider to speak the user's message; the exact
-approved message is rendered as an overlay.
+H.264 video plus AAC audio. Finishing preserves the provider's native speech, music, and effects. The prompt asks the
+supplied Bal Ganpati to speak the approved dedication exactly once in a cute, youthful voice,
+with synchronized facial animation and a musical soundtrack. See
+[the speaking flow and verification notes](../docs/SPEAKING_VIDEO_FLOW.md).
 
 The fal.ai adapter uploads the source PNG and requests one-hour input/output object lifetimes,
 submits at normal queue priority, and resumes by request ID without uploading or submitting

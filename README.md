@@ -15,6 +15,8 @@ Live app: https://project-d5db8f30-7db5-4b54-925.web.app
 
 The native iPhone app, local verification captures, build outputs and credentials are excluded. This repository starts with the current web release rather than copying unrelated native Git history.
 
+See [teammate setup](docs/TEAMMATE_SETUP.md) for clone instructions and separately supplied configuration.
+
 ## Local development
 
 Use Node.js 24 or newer.
