@@ -1,0 +1,20 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --pull
+      - --tag
+      - ${_IMAGE_REPOSITORY}/devotional-backend:${_IMAGE_TAG}
+      - .
+
+images:
+  - ${_IMAGE_REPOSITORY}/devotional-backend:${_IMAGE_TAG}
+
+substitutions:
+  _IMAGE_REPOSITORY: asia-south1-docker.pkg.dev/project-d5db8f30-7db5-4b54-925/devotional-movies
+  _IMAGE_TAG: staging
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: 1200s

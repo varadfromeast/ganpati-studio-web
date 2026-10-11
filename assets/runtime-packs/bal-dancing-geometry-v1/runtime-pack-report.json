@@ -1,0 +1,318 @@
+{
+  "counts": {
+    "bytes": 8893443,
+    "files": 38
+  },
+  "inventory": [
+    {
+      "bytes": 26205,
+      "contentHash": "sha256:9b7641f95c799c5f94462bfc3a5e31cd6b55696acc74b1f974e9755affa8759b",
+      "path": "fit-masks/crown-head-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 7877,
+      "contentHash": "sha256:34a853ad0073cc38cca33b02322d6f5f2aade7f4509a5bba0378a690885df11a",
+      "path": "fit-masks/garland-chest-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 9679,
+      "contentHash": "sha256:9d8a193bc76de4cfdc1b676542275c39e4dda06f869ca5964956777ad7c092e9",
+      "path": "fit-masks/outfit-full-body-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 8504,
+      "contentHash": "sha256:6779ddfa55fe7f0088e73effc60853bbbc0d3eaf49a886b5ee8ef2dc61d9fc9e",
+      "path": "fit-masks/scene-full-canvas-zone.png",
+      "roles": [
+        "fitMask"
+      ]
+    },
+    {
+      "bytes": 2342350,
+      "contentHash": "sha256:2fbbef600d0855cd180ef8514115d8f39907e63f071ac365cdaeee917d9dda0f",
+      "path": "layers/base.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 177958,
+      "contentHash": "sha256:9f96228f51788ac603d8c2d0f37a3e14dbae9478d1a9c131eb65f2e77fe95bc4",
+      "path": "layers/crown-blue-lotus-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 75364,
+      "contentHash": "sha256:6034d65b831f9608e6c077bf4f6c8e91938bb8a89c7f643a8377fdfb94d1bf9e",
+      "path": "layers/crown-flower-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6189,
+      "contentHash": "sha256:5fcc9af7842d40a4ad318eec3eee596acf0dde41deeabe0ed60246b927d1201c",
+      "path": "layers/crown-none-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 274481,
+      "contentHash": "sha256:f6c96341c3e1e3e345027a5670e83f6216ad18eb0c3698cf54b1aaf48153a438",
+      "path": "layers/crown-peacock-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 187838,
+      "contentHash": "sha256:e4b9f3a7403482a5ef03ed899eb305c003f3181c46e3bd139a1d47c935ae23bd",
+      "path": "layers/crown-royal-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 41671,
+      "contentHash": "sha256:094c55d6e433f6b44601d7f2838f32207c70412f97ad6ca2706b851f006aecba",
+      "path": "layers/fixed-trunk-foreground.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 67713,
+      "contentHash": "sha256:41dcbc6acb12aefc7cafeb33356c761b85f5acd1622fd79522cbeaee86a7f702",
+      "path": "layers/garland-lotus-jasmine-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 81408,
+      "contentHash": "sha256:c218888ec4548ab47af51456ba112b2694d23913b97bcf6b7aaad889d75bcf87",
+      "path": "layers/garland-marigold-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6188,
+      "contentHash": "sha256:c6ba721c99e3c7167f583bf7f1e163a9bd6209f6747a171367291e98c1604fb9",
+      "path": "layers/garland-none-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 67108,
+      "contentHash": "sha256:edecb041c1f50944f26b62a69e38908e7c5505f3151879340b4a206acd003b1a",
+      "path": "layers/garland-rose-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 64732,
+      "contentHash": "sha256:26a0c8cf5d700cb9c69cecd501bb64a3de058674a76ab22880a13599adedc251",
+      "path": "layers/garland-rose-flowing-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 478777,
+      "contentHash": "sha256:ae4562892317ca3fd7bea09d1da517f067e1d96f1202e3766523e3e05c02dfc2",
+      "path": "layers/outfit-armor-royal-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 429849,
+      "contentHash": "sha256:edcb486bcb6f4f0a078c0c8c8b75b590b39d421bf4223335a3101754fe8993e2",
+      "path": "layers/outfit-jewel-festival-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6189,
+      "contentHash": "sha256:f107775a8ae1813c42eec7371a6e6b96535677631b82cf5118a99edaef976452",
+      "path": "layers/outfit-saffron-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 430354,
+      "contentHash": "sha256:91deff295b2a157994c029a253d6ba0b9caf3790880e7df7202629a3a0975dac",
+      "path": "layers/outfit-teal-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 2835976,
+      "contentHash": "sha256:0395614cfb16c51737dc26b5233c8ab5aa0be061d2504c6d0dbc8ac1eefc1c8e",
+      "path": "layers/scene-celestial-aarti-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 6185,
+      "contentHash": "sha256:49123b5a8df4037f28850c5dcbbfc558a94042b5c4c1704b3c6c0357c64e23ed",
+      "path": "layers/scene-original-dancing.png",
+      "roles": [
+        "layer"
+      ]
+    },
+    {
+      "bytes": 34143,
+      "contentHash": "sha256:d2918e7e4c190cf838590fddaac5c97d2e1817a172af7607eb00a894f384429c",
+      "path": "manifest.v2.json",
+      "roles": [
+        "manifest"
+      ]
+    },
+    {
+      "bytes": 66627,
+      "contentHash": "sha256:77be391b3d910d64a26d9bf051374d22ebb91586ee7d71ae32bd491d2f8e43e9",
+      "path": "thumbnails/crown-blue-lotus-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 36915,
+      "contentHash": "sha256:9691cfb26ce2ffc0747685aced801aafe509485c5501331c309a7389e8e31f77",
+      "path": "thumbnails/crown-flower-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 87609,
+      "contentHash": "sha256:1b34fbc7bb23f4f784823c27d33783a5f63889d8acb545a187a5301f83d2c60b",
+      "path": "thumbnails/crown-peacock-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 76231,
+      "contentHash": "sha256:99d3ece6038b02a76b06471b8a64dd1888d0b6125a7cec8ea22c0070b66bd81d",
+      "path": "thumbnails/crown-royal-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 36738,
+      "contentHash": "sha256:dbd4a475ad403e89ab4564ad009081375f42ef2645a661f6826833b63fa6f476",
+      "path": "thumbnails/garland-lotus-jasmine-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 36658,
+      "contentHash": "sha256:391e59d9467152d2a4b140ec0769543829e0b0b8fbff63c51ebadadb4ef09b35",
+      "path": "thumbnails/garland-marigold-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 33276,
+      "contentHash": "sha256:c0cf40d7e813f7442b5e7e139451b1755a5f606daaad5364609a8d6e74f1cd49",
+      "path": "thumbnails/garland-rose-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 32821,
+      "contentHash": "sha256:41ed413b1d1301e3e96642f2143efcaf03f30d4f86fae6bf33181e1f83896691",
+      "path": "thumbnails/garland-rose-flowing-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 334,
+      "contentHash": "sha256:70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c",
+      "path": "thumbnails/none-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 143774,
+      "contentHash": "sha256:8a054e256008c840935d983e8454a17d728cb6458366a8ff8b8c0ec76df2ef77",
+      "path": "thumbnails/outfit-armor-royal-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 140030,
+      "contentHash": "sha256:38d898188d19b1e1743021e074a85f7fdb2d18d83facc77d319bf35cd344387e",
+      "path": "thumbnails/outfit-jewel-festival-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 123952,
+      "contentHash": "sha256:9cd5400c0eb0a776b65beca7441df1f2d41503006f874686346e0975dbb644fc",
+      "path": "thumbnails/outfit-saffron-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 141411,
+      "contentHash": "sha256:b1babb8ad2d506f800163b02649c55bbf6c8db970811ad7d41d4660363609a2a",
+      "path": "thumbnails/outfit-teal-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 138967,
+      "contentHash": "sha256:f89a8ef812b407e088e9794ebb7721010661713ddd871568c002dce1a4bd2b13",
+      "path": "thumbnails/scene-celestial-aarti-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    {
+      "bytes": 131362,
+      "contentHash": "sha256:0c4f9348cc838d72acfb5d076e83313c9a755b75c4ddbdc058603fa3061a7627",
+      "path": "thumbnails/scene-original-dancing.png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  ],
+  "packID": "murti.bal-dancing.v1",
+  "releaseEligible": true,
+  "reviewStatus": "approved",
+  "schemaVersion": 1,
+  "status": "passed",
+  "validationPolicy": "release"
+}

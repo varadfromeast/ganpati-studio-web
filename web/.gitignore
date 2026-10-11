@@ -1,0 +1,8 @@
+# Runtime configuration stays local. Commit only the documented placeholder.
+.env
+.env.*
+!.env.example
+
+# Generated dependencies and build output.
+node_modules/
+dist/

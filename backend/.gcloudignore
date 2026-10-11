@@ -1,0 +1,14 @@
+.gcloudignore
+.git
+.gitignore
+.DS_Store
+node_modules/
+dist/
+test/
+artifacts/
+tmp/
+coverage/
+.env
+infra/terraform/.terraform/
+infra/terraform/*.tfstate*
+infra/terraform/*.tfplan

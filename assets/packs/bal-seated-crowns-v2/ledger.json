@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "packID": "murti.bal-seated.v1",
+  "releaseStatus": "approved-for-release",
+  "entries": {
+    "base": {
+      "source": "assets/packs/bal-seated-crowns-v2/layers/base.png",
+      "method": "AI-assisted candidate selected by the product owner",
+      "rightsEvidence": "Project-owned source record; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown-royal": {
+      "source": "design/asset-sources/crowns/royal-mukut-layer-pilot-v2-chroma.png",
+      "method": "OpenAI ImageGen candidate, chroma removed and aligned to canonical canvas",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown-peacock": {
+      "source": "design/asset-sources/crowns/peacock-mukut-layer-pilot-v2-chroma.png",
+      "method": "OpenAI ImageGen candidate, chroma removed and aligned to canonical canvas",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown-flower": {
+      "source": "design/asset-sources/crowns/flower-crown-layer-pilot-v2-chroma.png",
+      "method": "OpenAI ImageGen candidate, chroma removed and aligned to canonical canvas",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "crown-blue-lotus": {
+      "source": "design/asset-sources/crowns/blue-lotus-mukut-reference-v1.jpg + design/asset-sources/crowns/blue-lotus-mukut-layer-v1-chroma.png",
+      "method": "User-supplied blue-and-gold crown reference re-rendered with OpenAI ImageGen, chroma removed, and deterministically fitted to the canonical crown socket at visible bounds [270,315,675,680]",
+      "rightsEvidence": "User supplied the design reference; generation provenance is recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland-rose-jasmine": {
+      "source": "design/asset-sources/garlands/components-v2/rose-temple-unit-v2-chroma.png",
+      "method": "OpenAI ImageGen flower components, chroma removed and deterministically sampled along the approved shared garland path",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland-rose-jasmine-flowing": {
+      "source": "design/asset-sources/garlands/components-v2/rose-flowing-unit-v2-chroma.png",
+      "method": "OpenAI ImageGen flower component, chroma removed and deterministically sampled at wider intervals along the approved shared garland path",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland-marigold": {
+      "source": "design/asset-sources/garlands/components-v2/marigold-unit-v2-chroma.png",
+      "method": "OpenAI ImageGen marigold components, chroma removed and deterministically sampled along the approved shared garland path",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland-lotus-jasmine": {
+      "source": "design/asset-sources/garlands/components-v2/jasmine-braid-unit-v2-chroma.png + lotus-centerpiece-v2-chroma.png",
+      "method": "OpenAI ImageGen jasmine and lotus components, chroma removed and deterministically sampled along the approved shared garland path",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit-armor-royal": {
+      "source": "assets/staging/cute/outfits/armor-royal-fitted-composite-v1.png",
+      "method": "OpenAI ImageGen identity-preserving edit fitted to canonical body landmarks, then deterministically clipped to the reviewed multi-part outfit geometry",
+      "rightsEvidence": "Generation provenance and final prompt recorded in the task; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit-teal": {
+      "source": "assets/packs/bal-seated-crowns-v2/layers/base.png",
+      "method": "Deterministic identity-safe recolor of the canonical rose textile pixels to peacock teal, preserving the source folds, gold zari, embroidery, lighting, and geometry",
+      "rightsEvidence": "Derived only from the project-owned canonical Base Murti; optional higher-detail ImageGen prompt is recorded in assets/staging/cute/outfits/PEACOCK_TEAL_PROMPT.md",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "outfit-jewel-festival": {
+      "source": "assets/staging/cute/outfits/jewel-drape/fitted-composite-v1.png",
+      "method": "OpenAI ImageGen identity-preserving edit guided by the supplied outfit reference, then deterministically clipped to canonical diagonal-drape and bent-leg garment geometry with fixed trunk, hand, and foot protections",
+      "rightsEvidence": "Generation provenance and final prompt recorded in the task; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "scene-original": {
+      "source": "assets/packs/bal-seated-crowns-v2/layers/base.png",
+      "method": "Transparent no-op adapter that preserves the canonical nursery shrine scene",
+      "rightsEvidence": "Same project-owned source record as the canonical Base Murti",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "scene-celestial-aarti": {
+      "source": "design/asset-sources/backgrounds/celestial-aarti-v1.png",
+      "method": "OpenAI ImageGen precise background edit of the canonical seated Base Murti, preserving the portrait canvas, murti identity, pose, camera, and accessory geometry",
+      "rightsEvidence": "Generation provenance and final prompt recorded in the task; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "offering-finger-occluder": {
+      "source": "assets/packs/bal-seated-crowns-v2/layers/base.png",
+      "method": "Exact canonical Base Murti pixels extracted with a deterministic hand-socket mask",
+      "rightsEvidence": "Same source record as the canonical Base Murti",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "garland-trunk-occluder": {
+      "source": "assets/packs/bal-seated-crowns-v2/layers/base.png",
+      "method": "Exact canonical Base Murti pixels extracted with the garland socket's deterministic trunk polygon",
+      "rightsEvidence": "Same source record as the canonical Base Murti",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "offering-classic": {
+      "source": "design/asset-sources/offerings/classic-modak-v1-chroma.png",
+      "method": "OpenAI ImageGen candidate, chroma removed and deterministically fitted under the canonical finger occluder",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "offering-kesar": {
+      "source": "design/asset-sources/offerings/kesar-modak-v1-chroma.png",
+      "method": "OpenAI ImageGen candidate, chroma removed and deterministically fitted under the canonical finger occluder",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    },
+    "offering-rose": {
+      "source": "design/asset-sources/offerings/rose-modak-v1-chroma.png",
+      "method": "OpenAI ImageGen candidate, chroma removed and deterministically fitted under the canonical finger occluder",
+      "rightsEvidence": "Generation provenance recorded; commercial release approved by product owner",
+      "technicalReview": "approved",
+      "culturalReview": "approved"
+    }
+  },
+  "signoff": {
+    "confirmedBy": "Product owner",
+    "date": "2026-09-04",
+    "evidence": "assets/RELEASE_SIGNOFF.json"
+  }
+}

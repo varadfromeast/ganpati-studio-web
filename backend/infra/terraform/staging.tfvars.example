@@ -1,0 +1,26 @@
+project_id           = "project-d5db8f30-7db5-4b54-925"
+region               = "asia-south1"
+environment          = "staging-fake"
+service_name         = "devotional-movies-staging"
+service_base_url     = "https://devotional-movies-staging-lx3xj2t7ga-el.a.run.app"
+movie_bucket_name    = "project-d5db8f30-7db5-4b54-925-devotional-movies"
+firebase_ios_app_id  = "1:378578536975:ios:b9e5d58b210ccf9ba6317a"
+
+# Add the registered Firebase Web App ID while retaining iOS App Check.
+# firebase_app_ids = [
+#   "1:378578536975:ios:b9e5d58b210ccf9ba6317a",
+#   "replace-with-firebase-web-app-id",
+# ]
+# Use exact scheme + host + optional port values. Never use "*".
+# web_allowed_origins = [
+#   "https://replace-with-web-app-origin.example",
+#   "http://localhost:5173",
+# ]
+
+# Replace this after Cloud Build with the new immutable digest before apply.
+container_image = "asia-south1-docker.pkg.dev/project-d5db8f30-7db5-4b54-925/devotional-movies/devotional-backend@sha256:c4067d501dc9fcc5d051ecbfea04220c32ae1afc2215e1ed5a3e0de779e43f64"
+
+enable_billable_generation = false
+manage_billing_budget       = false
+# billing_account_id        = "016234-96F5B1-EDB2DD"
+# monthly_budget_inr        = 3100

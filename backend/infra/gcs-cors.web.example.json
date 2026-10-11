@@ -1,0 +1,22 @@
+[
+  {
+    "origin": [
+      "https://replace-with-web-app-origin.example",
+      "http://localhost:5173"
+    ],
+    "method": [
+      "GET",
+      "HEAD"
+    ],
+    "responseHeader": [
+      "Accept-Ranges",
+      "Cache-Control",
+      "Content-Length",
+      "Content-Range",
+      "Content-Type",
+      "ETag",
+      "Range"
+    ],
+    "maxAgeSeconds": 3600
+  }
+]

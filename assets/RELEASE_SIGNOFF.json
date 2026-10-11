@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "scope": [
+    "murti.bal-seated.v1",
+    "murti.bal-dancing.v1",
+    "shipping runtime layers and thumbnails",
+    "Ganpati Studio application icon and generated presentation assets"
+  ],
+  "decision": "approved-for-release",
+  "confirmedBy": "Product owner",
+  "confirmedAt": "2026-09-04",
+  "evidence": "The product owner confirmed that all technical, cultural, and rights sign-offs are complete in the Ganpati Studio Codex task.",
+  "rightsAttestation": "The product owner confirms ownership of, or permission to commercially publish, every shipping project-supplied and AI-assisted asset in this scope.",
+  "runtimeEvidence": {
+    "murti.bal-seated.v1": "assets/runtime-packs/bal-seated-crowns-v2/runtime-pack-report.json",
+    "murti.bal-dancing.v1": "assets/runtime-packs/bal-dancing-geometry-v1/runtime-pack-report.json"
+  },
+  "nonPackShippingArtifacts": {
+    "web/public/app-icon.png": "sha256:f64a767a62b92fc02216a88e766e4694096642077fec4a6caa9f3628e1534f26",
+    "web/public/previews/dancing.webp": "sha256:e25d43f6a9cb29a94c0cafecbba83ee88e5588d85d4c2ac057492291754ea2ba",
+    "web/public/previews/provenance.json": "sha256:77f48dc8b8b557c56925d09502b603d5f95046d8e851e9246f7ad66617d86064",
+    "web/public/previews/seated.webp": "sha256:be9eeb0204c6940bf4a67c4cd7e9b53253d922bb09bb7de600b135071580f9df",
+    "web/public/materials/brushed-divider.webp": "sha256:52fcb02d0051be31f62324eff11fefad9aea48de337e05d32bc5f2e7c909b245",
+    "web/public/materials/brushed-divider.webp.json": "sha256:d6e493aa28aff363550286689f7468403650b5c3554b1e136f36a311c721f6d6",
+    "web/public/materials/painted-cobalt.webp": "sha256:b0ca958fc4548ae24f00a49b1ab4985a12554d37f1353512832a1c878717f0d2",
+    "web/public/materials/painted-cobalt.webp.json": "sha256:7cf5655b2f8c699b994fdb40dd080ccc32935cd4daaf10b04fc2b58e61129b90"
+  },
+  "notes": "This attestation applies to the exact content hashes staged by the release asset pipeline and listed above. Any changed or newly generated asset requires a new review."
+}

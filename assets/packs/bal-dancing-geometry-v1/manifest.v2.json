@@ -1,0 +1,1303 @@
+{
+  "schemaVersion": 2,
+  "posture": {
+    "id": "murti.bal-dancing.v1",
+    "baseVersion": "1.5.3",
+    "canvas": {
+      "width": 941,
+      "height": 1672
+    },
+    "coordinateOrigin": "topLeft",
+    "fixedLayerAssetIDs": [
+      "fixed.bal-dancing-base.v1",
+      "fixed.trunk-foreground.bal-dancing.v1"
+    ],
+    "supportedSlots": [
+      "crown",
+      "garland",
+      "outfit",
+      "scene"
+    ],
+    "defaultSelections": {
+      "crown": "crown.none.bal-dancing.v1",
+      "garland": "garland.none.bal-dancing.v1",
+      "outfit": "outfit.saffron.bal-dancing.v1",
+      "scene": "scene.original.bal-dancing.v1"
+    },
+    "rights": {
+      "author": "Ganpati Studio",
+      "sourceAgreement": "User-supplied base murti pilot, 2026-08-14",
+      "aiAssisted": true
+    },
+    "technicalReview": {
+      "status": "approved",
+      "reviewer": "Product owner",
+      "date": "2026-09-04"
+    },
+    "culturalReview": {
+      "status": "approved",
+      "reviewer": "Product owner",
+      "date": "2026-09-04"
+    }
+  },
+  "sockets": [
+    {
+      "socketID": "socket.crown.bal-dancing.v1",
+      "slot": "crown",
+      "anchor": {
+        "x": 430,
+        "y": 472
+      },
+      "fitGeometry": {
+        "model": "tiltedHeadwearFitV1",
+        "coordinateSpace": "canonicalPixelsTopLeft",
+        "landmarks": {
+          "leftTemple": {
+            "x": 286,
+            "y": 515
+          },
+          "rightTemple": {
+            "x": 571,
+            "y": 455
+          },
+          "hairlineCenter": {
+            "x": 430,
+            "y": 472
+          },
+          "apex": {
+            "x": 458,
+            "y": 237
+          }
+        },
+        "authoredRotationDegrees": 11.888658,
+        "authoringTuning": {
+          "status": "locked",
+          "policy": "anatomicalLandmarksPreserveSilhouetteV1"
+        },
+        "clearance": {
+          "tilakTop": {
+            "x": 432,
+            "y": 492
+          },
+          "leftEarTop": {
+            "x": 237,
+            "y": 509
+          },
+          "rightEarTop": {
+            "x": 609,
+            "y": 466
+          }
+        }
+      },
+      "fitMask": {
+        "file": "fit-masks/crown-head-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:9b7641f95c799c5f94462bfc3a5e31cd6b55696acc74b1f974e9755affa8759b"
+      },
+      "requiredLayerRoles": [
+        "front"
+      ],
+      "occluderLayerAssetIDs": []
+    },
+    {
+      "socketID": "socket.garland.bal-dancing.v1",
+      "slot": "garland",
+      "anchor": {
+        "x": 485,
+        "y": 743
+      },
+      "fitGeometry": {
+        "model": "twoCurveGarlandFitV1",
+        "coordinateSpace": "canonicalPixelsTopLeft",
+        "landmarks": {
+          "leftAttach": {
+            "x": 350,
+            "y": 765
+          },
+          "rightAttach": {
+            "x": 620,
+            "y": 720
+          },
+          "centerDrop": {
+            "x": 390,
+            "y": 950
+          }
+        },
+        "pathAuthoring": {
+          "model": "asymmetricTwoCubicBezierPathV1",
+          "placement": "equalArcLengthTangentAligned",
+          "endpointTaper": 0.68,
+          "leftControlPoints": [
+            {
+              "x": 321,
+              "y": 830
+            },
+            {
+              "x": 332,
+              "y": 905
+            }
+          ],
+          "rightControlPoints": [
+            {
+              "x": 650,
+              "y": 800
+            },
+            {
+              "x": 548,
+              "y": 910
+            }
+          ]
+        },
+        "authoringTuning": {
+          "status": "locked",
+          "policy": "sharedAnatomicalSocketPreserveRhythmV1"
+        },
+        "trunkOccluderPolygon": [
+          {
+            "x": 421,
+            "y": 640
+          },
+          {
+            "x": 488,
+            "y": 632
+          },
+          {
+            "x": 527,
+            "y": 665
+          },
+          {
+            "x": 570,
+            "y": 690
+          },
+          {
+            "x": 615,
+            "y": 706
+          },
+          {
+            "x": 617,
+            "y": 746
+          },
+          {
+            "x": 590,
+            "y": 774
+          },
+          {
+            "x": 548,
+            "y": 779
+          },
+          {
+            "x": 516,
+            "y": 764
+          },
+          {
+            "x": 532,
+            "y": 741
+          },
+          {
+            "x": 501,
+            "y": 735
+          },
+          {
+            "x": 469,
+            "y": 712
+          },
+          {
+            "x": 444,
+            "y": 680
+          }
+        ]
+      },
+      "fitMask": {
+        "file": "fit-masks/garland-chest-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:34a853ad0073cc38cca33b02322d6f5f2aade7f4509a5bba0378a690885df11a"
+      },
+      "requiredLayerRoles": [
+        "front"
+      ],
+      "occluderLayerAssetIDs": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ]
+    },
+    {
+      "socketID": "socket.outfit.bal-dancing.v1",
+      "slot": "outfit",
+      "anchor": {
+        "x": 445,
+        "y": 970
+      },
+      "fitMask": {
+        "file": "fit-masks/outfit-full-body-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:9d8a193bc76de4cfdc1b676542275c39e4dda06f869ca5964956777ad7c092e9"
+      },
+      "requiredLayerRoles": [
+        "front"
+      ],
+      "occluderLayerAssetIDs": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ]
+    },
+    {
+      "socketID": "socket.scene.bal-dancing.v1",
+      "slot": "scene",
+      "anchor": {
+        "x": 470,
+        "y": 836
+      },
+      "fitMask": {
+        "file": "fit-masks/scene-full-canvas-zone.png",
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 941,
+          "height": 1672
+        },
+        "contentHash": "sha256:6779ddfa55fe7f0088e73effc60853bbbc0d3eaf49a886b5ee8ef2dc61d9fc9e"
+      },
+      "requiredLayerRoles": [
+        "environment"
+      ],
+      "occluderLayerAssetIDs": []
+    }
+  ],
+  "layers": [
+    {
+      "assetID": "fixed.bal-dancing-base.v1",
+      "file": "layers/base.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 0,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:2fbbef600d0855cd180ef8514115d8f39907e63f071ac365cdaeee917d9dda0f",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "scene.original.bal-dancing.environment.v1",
+      "file": "layers/scene-original-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 1,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:49123b5a8df4037f28850c5dcbbfc558a94042b5c4c1704b3c6c0357c64e23ed",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "scene.celestial-aarti.bal-dancing.environment.v1",
+      "file": "layers/scene-celestial-aarti-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 1,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:0395614cfb16c51737dc26b5233c8ab5aa0be061d2504c6d0dbc8ac1eefc1c8e",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.none.bal-dancing.front.v1",
+      "file": "layers/crown-none-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 5,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:5fcc9af7842d40a4ad318eec3eee596acf0dde41deeabe0ed60246b927d1201c",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.none.bal-dancing.front.v1",
+      "file": "layers/garland-none-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 6,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:c6ba721c99e3c7167f583bf7f1e163a9bd6209f6747a171367291e98c1604fb9",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "outfit.saffron.bal-dancing.front.v1",
+      "file": "layers/outfit-saffron-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 7,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:f107775a8ae1813c42eec7371a6e6b96535677631b82cf5118a99edaef976452",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "outfit.armor-royal.bal-dancing.front.v1",
+      "file": "layers/outfit-armor-royal-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 7,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:ae4562892317ca3fd7bea09d1da517f067e1d96f1202e3766523e3e05c02dfc2",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "outfit.teal.bal-dancing.front.v1",
+      "file": "layers/outfit-teal-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 7,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:91deff295b2a157994c029a253d6ba0b9caf3790880e7df7202629a3a0975dac",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "outfit.jewel-festival.bal-dancing.front.v1",
+      "file": "layers/outfit-jewel-festival-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 7,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:edcb486bcb6f4f0a078c0c8c8b75b590b39d421bf4223335a3101754fe8993e2",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.marigold.bal-dancing.front.v1",
+      "file": "layers/garland-marigold-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 10,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:c218888ec4548ab47af51456ba112b2694d23913b97bcf6b7aaad889d75bcf87",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.rose.bal-dancing.front.v1",
+      "file": "layers/garland-rose-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 10,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:edecb041c1f50944f26b62a69e38908e7c5505f3151879340b4a206acd003b1a",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.rose-flowing.bal-dancing.front.v1",
+      "file": "layers/garland-rose-flowing-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 10,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:26a0c8cf5d700cb9c69cecd501bb64a3de058674a76ab22880a13599adedc251",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "garland.lotus-jasmine.bal-dancing.front.v1",
+      "file": "layers/garland-lotus-jasmine-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 10,
+      "blendMode": "normal",
+      "occludedBy": [
+        "fixed.trunk-foreground.bal-dancing.v1"
+      ],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:41dcbc6acb12aefc7cafeb33356c761b85f5acd1622fd79522cbeaee86a7f702",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "fixed.trunk-foreground.bal-dancing.v1",
+      "file": "layers/fixed-trunk-foreground.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 20,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:094c55d6e433f6b44601d7f2838f32207c70412f97ad6ca2706b851f006aecba",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.royal.bal-dancing.front.v1",
+      "file": "layers/crown-royal-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 30,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:e4b9f3a7403482a5ef03ed899eb305c003f3181c46e3bd139a1d47c935ae23bd",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.flower.bal-dancing.front.v1",
+      "file": "layers/crown-flower-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 30,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:6034d65b831f9608e6c077bf4f6c8e91938bb8a89c7f643a8377fdfb94d1bf9e",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.peacock.bal-dancing.front.v1",
+      "file": "layers/crown-peacock-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 30,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:f6c96341c3e1e3e345027a5670e83f6216ad18eb0c3698cf54b1aaf48153a438",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    },
+    {
+      "assetID": "crown.blue-lotus.bal-dancing.front.v1",
+      "file": "layers/crown-blue-lotus-dancing.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 941,
+        "height": 1672
+      },
+      "zIndex": 30,
+      "blendMode": "normal",
+      "occludedBy": [],
+      "requires": [],
+      "excludes": [],
+      "contentHash": "sha256:9f96228f51788ac603d8c2d0f37a3e14dbae9478d1a9c131eb65f2e77fe95bc4",
+      "rights": {
+        "author": "Ganpati Studio",
+        "sourceAgreement": "Dancing Joy attachment pilot, 2026-08-14",
+        "aiAssisted": true
+      }
+    }
+  ],
+  "optionGroups": [
+    {
+      "optionID": "crown.none.bal-dancing.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-dancing.v1",
+      "displayName": "No Crown",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.none.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/none-dancing.png",
+      "referenceComposite": "references/dancing-joy-clean.png",
+      "collectionTags": [
+        "none",
+        "natural",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.royal.bal-dancing.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-dancing.v1",
+      "displayName": "Dancing Royal Mukut",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.royal.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/crown-royal-dancing.png",
+      "referenceComposite": "references/dancing-joy-crown-only.png",
+      "collectionTags": [
+        "royal",
+        "gold",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.flower.bal-dancing.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-dancing.v1",
+      "displayName": "Dancing Flower Crown",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.flower.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/crown-flower-dancing.png",
+      "referenceComposite": "references/dancing-joy-crown-flower.png",
+      "collectionTags": [
+        "flower",
+        "lotus",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.peacock.bal-dancing.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-dancing.v1",
+      "displayName": "Dancing Peacock Mukut",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.peacock.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/crown-peacock-dancing.png",
+      "referenceComposite": "references/dancing-joy-crown-peacock.png",
+      "collectionTags": [
+        "peacock",
+        "gold",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "crown.blue-lotus.bal-dancing.v1",
+      "slot": "crown",
+      "socketID": "socket.crown.bal-dancing.v1",
+      "displayName": "Dancing Blue Lotus Mukut",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "crown.blue-lotus.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/crown-blue-lotus-dancing.png",
+      "referenceComposite": "references/dancing-joy-crown-blue-lotus.png",
+      "collectionTags": [
+        "blue-lotus",
+        "gold",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.none.bal-dancing.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-dancing.v1",
+      "displayName": "No Garland",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.none.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/none-dancing.png",
+      "referenceComposite": "references/dancing-joy-clean.png",
+      "collectionTags": [
+        "none",
+        "natural",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.marigold.bal-dancing.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-dancing.v1",
+      "displayName": "Dancing Marigold Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.marigold.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/garland-marigold-dancing.png",
+      "referenceComposite": "references/dancing-joy-garland-marigold.png",
+      "collectionTags": [
+        "marigold",
+        "festival",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.rose.bal-dancing.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-dancing.v1",
+      "displayName": "Dancing Rose Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.rose.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/garland-rose-dancing.png",
+      "referenceComposite": "references/dancing-joy-garland-rose.png",
+      "collectionTags": [
+        "rose",
+        "jasmine",
+        "temple",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.rose-flowing.bal-dancing.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-dancing.v1",
+      "displayName": "Dancing Flowing Rose Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.rose-flowing.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/garland-rose-flowing-dancing.png",
+      "referenceComposite": "references/dancing-joy-garland-rose-flowing.png",
+      "collectionTags": [
+        "rose",
+        "flowing",
+        "festive",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "garland.lotus-jasmine.bal-dancing.v1",
+      "slot": "garland",
+      "socketID": "socket.garland.bal-dancing.v1",
+      "displayName": "Dancing Lotus Jasmine Mala",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "garland.lotus-jasmine.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/garland-lotus-jasmine-dancing.png",
+      "referenceComposite": "references/dancing-joy-garland-lotus-jasmine.png",
+      "collectionTags": [
+        "lotus",
+        "jasmine",
+        "devotional",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.saffron.bal-dancing.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-dancing.v1",
+      "displayName": "Saffron Drape",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.saffron.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-saffron-dancing.png",
+      "referenceComposite": "references/dancing-joy-outfit-saffron.png",
+      "collectionTags": [
+        "saffron",
+        "base",
+        "traditional",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.armor-royal.bal-dancing.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-dancing.v1",
+      "displayName": "Royal Bal Kavach",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.armor-royal.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-armor-royal-dancing.png",
+      "referenceComposite": "references/dancing-joy-outfit-armor-royal.png",
+      "collectionTags": [
+        "armor",
+        "royal",
+        "gold",
+        "ruby",
+        "emerald",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.teal.bal-dancing.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-dancing.v1",
+      "displayName": "Peacock Teal",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.teal.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-teal-dancing.png",
+      "referenceComposite": "references/dancing-joy-outfit-teal.png",
+      "collectionTags": [
+        "peacock",
+        "teal",
+        "gold",
+        "traditional",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "outfit.jewel-festival.bal-dancing.v1",
+      "slot": "outfit",
+      "socketID": "socket.outfit.bal-dancing.v1",
+      "displayName": "Jewel Festival Drape",
+      "layerBindings": [
+        {
+          "role": "front",
+          "assetID": "outfit.jewel-festival.bal-dancing.front.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/outfit-jewel-festival-dancing.png",
+      "referenceComposite": "references/dancing-joy-outfit-jewel-festival.png",
+      "collectionTags": [
+        "peacock",
+        "teal",
+        "magenta",
+        "purple",
+        "gold",
+        "festival",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "scene.original.bal-dancing.v1",
+      "slot": "scene",
+      "socketID": "socket.scene.bal-dancing.v1",
+      "displayName": "Original Shrine",
+      "layerBindings": [
+        {
+          "role": "environment",
+          "assetID": "scene.original.bal-dancing.environment.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/scene-original-dancing.png",
+      "referenceComposite": "references/dancing-joy-scene-original.png",
+      "collectionTags": [
+        "base",
+        "home",
+        "daylight",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    },
+    {
+      "optionID": "scene.celestial-aarti.bal-dancing.v1",
+      "slot": "scene",
+      "socketID": "socket.scene.bal-dancing.v1",
+      "displayName": "Celestial Aarti",
+      "layerBindings": [
+        {
+          "role": "environment",
+          "assetID": "scene.celestial-aarti.bal-dancing.environment.v1"
+        }
+      ],
+      "compatiblePostures": [
+        "murti.bal-dancing.v1"
+      ],
+      "thumbnail": "thumbnails/scene-celestial-aarti-dancing.png",
+      "referenceComposite": "references/dancing-joy-scene-celestial-aarti.png",
+      "collectionTags": [
+        "starry",
+        "festival",
+        "night",
+        "diya",
+        "dancing-joy"
+      ],
+      "requires": [
+        "posture:murti.bal-dancing.v1"
+      ],
+      "excludes": [],
+      "technicalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      },
+      "culturalReview": {
+        "status": "approved",
+        "reviewer": "Product owner",
+        "date": "2026-09-04"
+      }
+    }
+  ],
+  "qa": {
+    "highRiskPairs": [
+      [
+        "crown.royal.bal-dancing.v1",
+        "garland.marigold.bal-dancing.v1"
+      ],
+      [
+        "crown.peacock.bal-dancing.v1",
+        "garland.rose.bal-dancing.v1"
+      ],
+      [
+        "crown.flower.bal-dancing.v1",
+        "garland.rose-flowing.bal-dancing.v1"
+      ],
+      [
+        "crown.blue-lotus.bal-dancing.v1",
+        "garland.lotus-jasmine.bal-dancing.v1"
+      ],
+      [
+        "crown.royal.bal-dancing.v1",
+        "outfit.armor-royal.bal-dancing.v1"
+      ],
+      [
+        "garland.rose.bal-dancing.v1",
+        "outfit.teal.bal-dancing.v1"
+      ],
+      [
+        "garland.lotus-jasmine.bal-dancing.v1",
+        "outfit.jewel-festival.bal-dancing.v1"
+      ]
+    ]
+  }
+}
